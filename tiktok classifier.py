@@ -73,3 +73,4 @@ best_model = max(best_models, key=lambda x: accuracy_score(y_test, best_models[x
 joblib.dump(best_models[best_model], f"{best_model}_model.pkl")
 print(f"Saved the best model: {best_model}")
 
+joblib.dump(vectorizer, "vectorizer.pkl")
